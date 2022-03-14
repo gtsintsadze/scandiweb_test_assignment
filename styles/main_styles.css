@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+.page-content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-content-wrapper .page-content {
+  padding: 30px;
+  max-width: 1080px;
+  width: 100%;
+}
+.page-content-wrapper .page-content .page-content_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #111110;
+}
+.page-content-wrapper .page-content .page-content_header h2 {
+  font-size: 38px;
+}
+.page-content-wrapper .page-content .page-content_header div button {
+  border: 1px solid #111110;
+  padding: 6px;
+  box-shadow: 3px 4px;
+  background-color: #fefeff;
+}
+.page-content-wrapper .page-content .page-content_header div button:first-child {
+  margin-right: 20px;
+}
+.page-content-wrapper .page-content .page-content_header div button:first-child a {
+  color: #111110;
+}
+.page-content-wrapper .page-content .product-list_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.page-content-wrapper .page-content .product-list_content .product-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 204px;
+  padding: 12px 12px 30px 12px;
+  margin: 0 1px 60px 0;
+  border: 2px solid #111110;
+}
+.page-content-wrapper .page-content .product-list_content .product-list-item div {
+  width: 100%;
+  margin-top: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
+.page-content-wrapper .page-content .product-list_content .product-list-item div p {
+  margin-bottom: 3px;
+}
+.page-content-wrapper .page-content .add-product_content #product-form {
+  /* Firefox */
+}
+.page-content-wrapper .page-content .add-product_content #product-form input::-webkit-outer-spin-button,
+.page-content-wrapper .page-content .add-product_content #product-form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.page-content-wrapper .page-content .add-product_content #product-form input[type=number] {
+  -moz-appearance: textfield;
+}
+.page-content-wrapper .page-content .page-content_footer {
+  text-align: center;
+  padding: 30px 0;
+  border-top: 2px solid #111110;
+}
+
+/*# sourceMappingURL=main_styles.css.map */

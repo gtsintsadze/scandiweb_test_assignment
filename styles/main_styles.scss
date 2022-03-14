@@ -16,7 +16,7 @@ $scandiweb_white : #fefeff;
     max-width: 1080px;
     width: 100%;
 
-    .product-list_header {
+    .page-content_header {
       @include flex(space-between, center);
       margin-bottom: 30px;
       padding-top: 20px;
@@ -36,6 +36,10 @@ $scandiweb_white : #fefeff;
 
           &:first-child {
             margin-right: 20px;
+
+            a {
+              color: $scandiweb_black;
+            }
           }
         }
       }
@@ -65,7 +69,22 @@ $scandiweb_white : #fefeff;
       }
     }
 
-    .product-list_footer {
+    .add-product_content {
+      #product-form {
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+          -moz-appearance: textfield;
+        }
+      }
+    }
+
+    .page-content_footer {
       text-align: center;
       padding: 30px 0;
       border-top: 2px solid $scandiweb_black;

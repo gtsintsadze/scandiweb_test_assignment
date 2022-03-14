@@ -1,1 +1,1 @@
-# junior_developer_test_task
+# scandiweb_test_assignment

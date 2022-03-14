@@ -1,2 +1,74 @@
-$scandiweb_black = #111110;
-$scandiweb_white = #fefeff;
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+$scandiweb_black : #111110;
+$scandiweb_white : #fefeff;
+
+@mixin flex($horizontal, $vertical) {
+  display: flex;
+  justify-content: $horizontal;
+  align-items: $vertical;
+}
+
+.page-content-wrapper {
+  @include flex(center, center);
+
+  .page-content {
+    padding: 30px;
+    max-width: 1080px;
+    width: 100%;
+
+    .product-list_header {
+      @include flex(space-between, center);
+      margin-bottom: 30px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid $scandiweb_black;
+
+      h2 {
+        font-size: 38px;
+      }
+
+      div {
+        button {
+          border: 1px solid $scandiweb_black;
+          padding: 6px;
+          box-shadow: 3px 4px;
+          background-color: $scandiweb_white;
+
+          &:first-child {
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+
+    .product-list_content {
+      @include flex(space-between, center);
+      flex-wrap: wrap;
+
+      .product-list-item {
+        @include flex(space-between, flex-start);
+        width: 204px;
+        padding: 12px 12px 30px 12px;
+        margin: 0 1px 60px 0;
+        border: 2px solid $scandiweb_black;
+
+        div {
+          width: 100%;
+          margin-top: 20px;
+          margin-right: 20px;
+          text-align: center;
+
+          p {
+            margin-bottom: 3px;
+          }
+        }
+      }
+    }
+
+    .product-list_footer {
+      text-align: center;
+      padding: 30px 0;
+      border-top: 2px solid $scandiweb_black;
+    }
+  }
+}

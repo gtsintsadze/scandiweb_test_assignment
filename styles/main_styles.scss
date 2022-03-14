@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
-$scandiweb_black : #111110;
-$scandiweb_white : #fefeff;
+
+$scandiweb_black: #111110;
+$scandiweb_white: #fefeff;
 
 @mixin flex($horizontal, $vertical) {
   display: flex;
@@ -70,16 +71,90 @@ $scandiweb_white : #fefeff;
     }
 
     .add-product_content {
-      #product-form {
-        input::-webkit-outer-spin-button,
-        input::-webkit-inner-spin-button {
-          -webkit-appearance: none;
-          margin: 0;
+      #product_form {
+
+        .item_properties {
+          margin-top: 20px;
+          margin-bottom: 30px;
+          @include flex(start, center);
+
+          div {
+            &:last-child {
+              margin-left: 20px;
+            }
+
+            label, input {
+              display: block;
+            }
+
+            label {
+              line-height: 33px;
+              font-weight: 500;
+            }
+
+            input {
+              margin-top: 10px;
+              margin-bottom: 10px;
+
+              &::placeholder {
+                padding-left: 7px;
+              }
+            }
+          }
         }
 
-        /* Firefox */
-        input[type=number] {
-          -moz-appearance: textfield;
+        .product-type-wrapper {
+          margin-bottom: 40px;
+
+          #productType {
+            margin-left: 15px;
+            border: 2px solid #060606b8;
+            border-radius: 3px;
+            padding: 2px 3px;
+          }
+        }
+
+        .product-description {
+          .dvd-description, .furniture-description, .book-description {
+            width: 320px;
+            margin: 20px 0;
+            padding: 15px;
+            border: 2px solid #060606b8;
+            border-radius: 3px;
+
+            * {
+              margin-bottom: 15px;
+            }
+          }
+
+          .furniture-description {
+            .furniture-description-content {
+              @include flex(start, center);
+              margin-bottom: 0;
+
+              div {
+                label, input {
+                  display: block;
+                }
+                label {
+                  line-height: 22px;
+                  margin-right: 13px;
+                }
+              }
+            }
+          }
+
+          .dvd-description {
+            label {
+              margin-right: 10px;
+            }
+          }
+
+          .book-description {
+            label {
+              margin-right: 10px;
+            }
+          }
         }
       }
     }

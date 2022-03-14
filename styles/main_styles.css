@@ -57,16 +57,67 @@
 .page-content-wrapper .page-content .product-list_content .product-list-item div p {
   margin-bottom: 3px;
 }
-.page-content-wrapper .page-content .add-product_content #product-form {
-  /* Firefox */
+.page-content-wrapper .page-content .add-product_content #product_form .item_properties {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
-.page-content-wrapper .page-content .add-product_content #product-form input::-webkit-outer-spin-button,
-.page-content-wrapper .page-content .add-product_content #product-form input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.page-content-wrapper .page-content .add-product_content #product_form .item_properties div:last-child {
+  margin-left: 20px;
 }
-.page-content-wrapper .page-content .add-product_content #product-form input[type=number] {
-  -moz-appearance: textfield;
+.page-content-wrapper .page-content .add-product_content #product_form .item_properties div label, .page-content-wrapper .page-content .add-product_content #product_form .item_properties div input {
+  display: block;
+}
+.page-content-wrapper .page-content .add-product_content #product_form .item_properties div label {
+  line-height: 33px;
+  font-weight: 500;
+}
+.page-content-wrapper .page-content .add-product_content #product_form .item_properties div input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.page-content-wrapper .page-content .add-product_content #product_form .item_properties div input::placeholder {
+  padding-left: 7px;
+}
+.page-content-wrapper .page-content .add-product_content #product_form .product-type-wrapper {
+  margin-bottom: 40px;
+}
+.page-content-wrapper .page-content .add-product_content #product_form .product-type-wrapper #productType {
+  margin-left: 15px;
+  border: 2px solid #060606b8;
+  border-radius: 3px;
+  padding: 2px 3px;
+}
+.page-content-wrapper .page-content .add-product_content #product_form .product-description .dvd-description, .page-content-wrapper .page-content .add-product_content #product_form .product-description .furniture-description, .page-content-wrapper .page-content .add-product_content #product_form .product-description .book-description {
+  width: 320px;
+  margin: 20px 0;
+  padding: 15px;
+  border: 2px solid #060606b8;
+  border-radius: 3px;
+}
+.page-content-wrapper .page-content .add-product_content #product_form .product-description .dvd-description *, .page-content-wrapper .page-content .add-product_content #product_form .product-description .furniture-description *, .page-content-wrapper .page-content .add-product_content #product_form .product-description .book-description * {
+  margin-bottom: 15px;
+}
+.page-content-wrapper .page-content .add-product_content #product_form .product-description .furniture-description .furniture-description-content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 0;
+}
+.page-content-wrapper .page-content .add-product_content #product_form .product-description .furniture-description .furniture-description-content div label, .page-content-wrapper .page-content .add-product_content #product_form .product-description .furniture-description .furniture-description-content div input {
+  display: block;
+}
+.page-content-wrapper .page-content .add-product_content #product_form .product-description .furniture-description .furniture-description-content div label {
+  line-height: 22px;
+  margin-right: 13px;
+}
+.page-content-wrapper .page-content .add-product_content #product_form .product-description .dvd-description label {
+  margin-right: 10px;
+}
+.page-content-wrapper .page-content .add-product_content #product_form .product-description .book-description label {
+  margin-right: 10px;
 }
 .page-content-wrapper .page-content .page-content_footer {
   text-align: center;

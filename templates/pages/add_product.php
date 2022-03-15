@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/styles/tools/reset.css">
-    <link rel="stylesheet" href="/styles/main_styles.css">
+    <link rel="stylesheet" href="../styles/tools/reset.css">
+    <link rel="stylesheet" href="../styles/main_styles.css">
     <title>Product Add</title>
 </head>
 <body>

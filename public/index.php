@@ -1,6 +1,10 @@
 <?php
 
-//print_r($_REQUEST);
-echo '<pre>';
-print_r($_SERVER);
-echo '</pre>';
+include_once "..\core\Application.php";
+
+include_once "..\\routes.php";
+
+$app = new \core\Application();
+
+$app->run();
+

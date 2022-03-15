@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles/tools/reset.css">
-    <link rel="stylesheet" href="styles/main_styles.css">
+    <link rel="stylesheet" href="../templates/styles/tools/reset.css">
+    <link rel="stylesheet" href="../templates/styles/main_styles.css">
     <title>Product List</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
             <h2>Product List</h2>
             <div>
                 <button id="add-product-btn">
-                    <a href="pages/add_product.html">ADD</a>
+                    <a href="/add_product">ADD</a>
                 </button>
                 <button id="delete-product-btn">MASS DELETE</button>
             </div>
